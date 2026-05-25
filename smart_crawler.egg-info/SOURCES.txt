@@ -1,0 +1,7 @@
+setup.py
+smart_crawler.egg-info/PKG-INFO
+smart_crawler.egg-info/SOURCES.txt
+smart_crawler.egg-info/dependency_links.txt
+smart_crawler.egg-info/entry_points.txt
+smart_crawler.egg-info/requires.txt
+smart_crawler.egg-info/top_level.txt
