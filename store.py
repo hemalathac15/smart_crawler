@@ -1,4 +1,3 @@
-#Yogiramsuratkumar Jaya Guru Raya!
 import json
 import os
 

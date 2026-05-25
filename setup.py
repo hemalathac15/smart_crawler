@@ -1,4 +1,3 @@
-#Yogiramsuratkumar Jaya Guru Raya!
 from setuptools import setup, find_packages
 
 setup(

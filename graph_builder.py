@@ -1,4 +1,3 @@
-#Yogiramsuratkumar Jaya Guru Raya!
 import networkx as nx
 import matplotlib.pyplot as plt
 from store import DataStore

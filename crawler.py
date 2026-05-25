@@ -1,4 +1,3 @@
-#Yogiramsuratkumar Yogiramsuratkumar Yogiramsuratkumar Jaya Guru Raya!
 import asyncio
 from playwright.async_api import async_playwright
 from parser import HTMLParser

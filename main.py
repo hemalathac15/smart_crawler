@@ -1,4 +1,3 @@
-#Yogiramsuratkumar Jaya Guru Raya!
 import asyncio
 import sys
 import config

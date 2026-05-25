@@ -1,4 +1,3 @@
-#Yogiramsuratkumar Jaya Guru Raya!
 import os
 
 START_URL = "https://cyart.in/"

@@ -1,4 +1,3 @@
-#Yogiramsuratkumar Jaya Guru Raya!
 from urllib.parse import urlparse, urljoin
 
 class Colors:

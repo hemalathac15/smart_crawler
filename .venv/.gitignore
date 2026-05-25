@@ -7,3 +7,4 @@ output/
 .vscode/
 .idea/
 smart_crawler.egg-info/
+!output/fig_cyart.png
