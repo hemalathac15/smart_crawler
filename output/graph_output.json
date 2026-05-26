@@ -1,160 +1,165 @@
 {
     "nodes": [
         {
-            "id": "https://cyart.in/",
-            "type": "url",
-            "label": "https://cyart.in/"
+            "id": "n1",
+            "type": "page",
+            "url": "https://cyart.in/"
         },
         {
-            "id": "https://cyart.in/coming-soon/testimonials",
-            "type": "url",
-            "label": "https://cyart.in/coming-soon/testimonials"
+            "id": "n2",
+            "type": "page",
+            "url": "https://cyart.in/government/compliance"
         },
         {
-            "id": "https://cyart.in/industry/legaltech",
-            "type": "url",
-            "label": "https://cyart.in/industry/legaltech"
+            "id": "n3",
+            "type": "page",
+            "url": "https://cyart.in/careers"
         },
         {
-            "id": "https://cyart.in/industry/enterprise",
-            "type": "url",
-            "label": "https://cyart.in/industry/enterprise"
+            "id": "n4",
+            "type": "page",
+            "url": "https://cyart.in/industry/fintech"
         },
         {
-            "id": "https://cyart.in/use-cases",
-            "type": "url",
-            "label": "https://cyart.in/use-cases"
+            "id": "n5",
+            "type": "page",
+            "url": "https://cyart.in/terms"
         },
         {
-            "id": "https://cyart.in/industry/healthtech",
-            "type": "url",
-            "label": "https://cyart.in/industry/healthtech"
+            "id": "n6",
+            "type": "page",
+            "url": "https://cyart.in/whitepaper"
         },
         {
-            "id": "https://cyart.in/contact",
-            "type": "url",
-            "label": "https://cyart.in/contact"
+            "id": "n7",
+            "type": "page",
+            "url": "https://cyart.in/developer-hub"
         },
         {
-            "id": "https://cyart.in/government/data-residency",
-            "type": "url",
-            "label": "https://cyart.in/government/data-residency"
+            "id": "n8",
+            "type": "page",
+            "url": "https://cyart.in/privacy"
         },
         {
-            "id": "https://cyart.in/whitepaper",
-            "type": "url",
-            "label": "https://cyart.in/whitepaper"
+            "id": "n9",
+            "type": "page",
+            "url": "https://cyart.in/platforms"
         },
         {
-            "id": "https://cyart.in/cyvul-track",
-            "type": "url",
-            "label": "https://cyart.in/cyvul-track"
+            "id": "n10",
+            "type": "page",
+            "url": "https://cyart.in/shield"
         },
         {
-            "id": "https://cyart.in/government",
-            "type": "url",
-            "label": "https://cyart.in/government"
+            "id": "n11",
+            "type": "page",
+            "url": "https://cyart.in/coming-soon/testimonials"
         },
         {
-            "id": "https://cyart.in/signup",
-            "type": "url",
-            "label": "https://cyart.in/signup"
+            "id": "n12",
+            "type": "page",
+            "url": "https://cyart.in/government/data-residency"
         },
         {
-            "id": "https://cyart.in/login",
-            "type": "url",
-            "label": "https://cyart.in/login"
+            "id": "n13",
+            "type": "page",
+            "url": "https://cyart.in/contact"
         },
         {
-            "id": "https://cyart.in/coming-soon/advisors",
-            "type": "url",
-            "label": "https://cyart.in/coming-soon/advisors"
+            "id": "n14",
+            "type": "page",
+            "url": "https://cyart.in/use-cases"
         },
         {
-            "id": "https://cyart.in/industry/securitytech",
-            "type": "url",
-            "label": "https://cyart.in/industry/securitytech"
+            "id": "n15",
+            "type": "page",
+            "url": "https://cyart.in/industry/healthtech"
         },
         {
-            "id": "https://cyart.in/careers",
-            "type": "url",
-            "label": "https://cyart.in/careers"
+            "id": "n16",
+            "type": "page",
+            "url": "https://cyart.in/docs"
         },
         {
-            "id": "https://cyart.in/platforms",
-            "type": "url",
-            "label": "https://cyart.in/platforms"
+            "id": "n17",
+            "type": "page",
+            "url": "https://cyart.in/industry/legaltech"
         },
         {
-            "id": "https://cyart.in/developer-hub",
-            "type": "url",
-            "label": "https://cyart.in/developer-hub"
+            "id": "n18",
+            "type": "page",
+            "url": "https://cyart.in/coming-soon/advisors"
         },
         {
-            "id": "https://cyart.in/rss",
-            "type": "url",
-            "label": "https://cyart.in/rss"
+            "id": "n19",
+            "type": "page",
+            "url": "https://cyart.in/cyvul-track"
         },
         {
-            "id": "https://cyart.in/docs",
-            "type": "url",
-            "label": "https://cyart.in/docs"
+            "id": "n20",
+            "type": "page",
+            "url": "https://cyart.in/login"
         },
         {
-            "id": "https://cyart.in/privacy",
-            "type": "url",
-            "label": "https://cyart.in/privacy"
+            "id": "n21",
+            "type": "page",
+            "url": "https://cyart.in/connect"
         },
         {
-            "id": "https://cyart.in/connect",
-            "type": "url",
-            "label": "https://cyart.in/connect"
+            "id": "n22",
+            "type": "page",
+            "url": "https://cyart.in/rss"
         },
         {
-            "id": "https://cyart.in/government/compliance",
-            "type": "url",
-            "label": "https://cyart.in/government/compliance"
+            "id": "n23",
+            "type": "page",
+            "url": "https://cyart.in/coming-soon/cli"
         },
         {
-            "id": "https://cyart.in/coming-soon/cli",
-            "type": "url",
-            "label": "https://cyart.in/coming-soon/cli"
+            "id": "n24",
+            "type": "page",
+            "url": "https://cyart.in/chronicles"
         },
         {
-            "id": "https://cyart.in/industry/fintech",
-            "type": "url",
-            "label": "https://cyart.in/industry/fintech"
+            "id": "n25",
+            "type": "page",
+            "url": "https://cyart.in/industry/securitytech"
         },
         {
-            "id": "https://cyart.in/terms",
-            "type": "url",
-            "label": "https://cyart.in/terms"
+            "id": "n26",
+            "type": "page",
+            "url": "https://cyart.in/signup"
         },
         {
-            "id": "https://cyart.in/chronicles",
-            "type": "url",
-            "label": "https://cyart.in/chronicles"
+            "id": "n27",
+            "type": "page",
+            "url": "https://cyart.in/government"
         },
         {
-            "id": "https://cyart.in/chronicles/deepfakes",
-            "type": "url",
-            "label": "https://cyart.in/chronicles/deepfakes"
+            "id": "n28",
+            "type": "page",
+            "url": "https://cyart.in/industry/enterprise"
         },
         {
-            "id": "https://cyart.in/shield",
-            "type": "url",
-            "label": "https://cyart.in/shield"
+            "id": "n29",
+            "type": "page",
+            "url": "https://cyart.in/chronicles/zero-trust"
         },
         {
-            "id": "https://cyart.in/chronicles/ledger-node",
-            "type": "url",
-            "label": "https://cyart.in/chronicles/ledger-node"
+            "id": "n30",
+            "type": "page",
+            "url": "https://cyart.in/chronicles/ledger-node"
         },
         {
-            "id": "https://cyart.in/chronicles/zero-trust",
-            "type": "url",
-            "label": "https://cyart.in/chronicles/zero-trust"
+            "id": "n31",
+            "type": "page",
+            "url": "https://cyart.in/chronicles/deepfakes"
         }
     ],
-    "links": []
+    "edges": [],
+    "metadata": {
+        "generated_at": "2026-05-26T04:13:36.441972Z",
+        "total_nodes": 31,
+        "total_edges": 0
+    }
 }

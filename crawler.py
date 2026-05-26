@@ -3,6 +3,9 @@ from playwright.async_api import async_playwright
 from parser import HTMLParser
 from utils import is_same_domain
 import config
+import json
+from datetime import datetime
+import os
 
 class AsyncEngine:
     def __init__(self, start_url):
@@ -38,7 +41,19 @@ class AsyncEngine:
                     if response and response.status == 200:
                         html = await page.content()
                         discovered_links, intel = HTMLParser.parse_page(html, url)
-                        self.collected_intel.append(intel)
+                        headers = response.headers
+                        content_type = headers.get("content-type", "text/html").split(";")[0]
+                        page_intel = {
+                                    "url": url,
+                                    "method": "GET",  # Base automated request configuration
+                                    "status_code": response.status,
+                                    "content_type": content_type,
+                                    "parameters": intel.get("parameters", []),
+                                    "forms": intel.get("forms", []),
+                                    "links": discovered_links,
+                                    "technologies": intel.get("technologies", [])
+                             }
+                        self.collected_intel.append(page_intel)
 
                         for next_link in discovered_links:
                             self.relationship_links.append({"source": url, "target": next_link})
@@ -67,9 +82,40 @@ class AsyncEngine:
             else:
                 # Task completed successfully without errors
                 queue.task_done()
-
+                
         await context.close()
+    
+    def save_results(self):
+        """Compiles collected crawler intelligence records into the final schema file."""
+        if not self.collected_intel:
+            print("[!] No data collected to export.")
+            return
 
+        target_profile = self.collected_intel[0]
+
+        final_output = {
+            "url": target_profile.get("url", self.start_url),
+            "method": target_profile.get("method", "GET"),
+            "status_code": target_profile.get("status_code", 200),
+            "content_type": target_profile.get("content_type", "text/html"),
+            "discovered_at": datetime.utcnow().isoformat() + "Z", 
+            "parameters": target_profile.get("parameters", [
+                {"name": "user", "type": "query", "value": ""},
+                {"name": "redirect", "type": "query", "value": ""}
+            ]),
+            "forms": target_profile.get("forms", []),
+            "links": list(self.visited_urls),  
+            "technologies": target_profile.get("technologies", [])
+        }
+
+        os.makedirs("output", exist_ok=True)
+
+        with open("output/crawler_output.json", "w") as f:
+            json.dump(final_output, f, indent=4)
+
+        print("[*] Successfully generated output/results.json.")
+        
+    #  FIXED: Indented properly inside the AsyncEngine class structure
     async def run(self):
         """Main orchestrator utilizing Playwright context environments."""
         queue = asyncio.Queue()
@@ -83,16 +129,14 @@ class AsyncEngine:
                 for _ in range(self.concurrent_limit)
             ]
 
-            # Wait here until every node in the queue has been crawled and processed
             await queue.join()
 
-            # FIXED: Instead of letting cancel() tear through active loops violently, 
-            # we suppress the resulting CancelledError to let Python shut down cleanly.
             for worker_task in workers:
                 worker_task.cancel()
             
-            # Await the tasks to let them clean up their scopes without printing stack traces
             await asyncio.gather(*workers, return_exceptions=True)
             await browser.close()
+            
+            self.save_results()
 
         return self.collected_intel, self.relationship_links
